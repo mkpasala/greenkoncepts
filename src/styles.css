@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
+/* Login component CSS :START */
+.login-wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:40%;
+}
+
+.login-btn{
+    text-align: center;
+}
+
+/* Login component CSS :END */
+
+/* main component CSS :START */
+
+.main-wrapper{
+    margin-top:2%;
+}
+
+.custom-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.custom-row:nth-child(3){
+    margin-top:3%;
+}
+
+.custom-col{
+    width:20%;
+}
+
+.card{
+    background-color: #2c3e50 !important;
+}
+
+.card .btn-primary{
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+}
+@media only screen and (max-width: 700px) {
+    .custom-row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+    }
+    .custom-col{
+        width:50%;
+        margin:2%;
+    }
+  }
+
+.main-wrapper > .navbar{
+margin-bottom: 8%;
+} 
+
+.main-wrapper .card-body{
+    min-height: 1rem;
+    padding: 3rem;
+}
+
+
+/* main component CSS :END */
+
+/* customer-details-wrapper CSS:: START */
+.orders-details-wrapper .header{
+ padding-top:2%;
+ padding-bottom:2%;
+}
+
+.view-details-wrapper{
+    margin-top: 4%;;
+}
+
+.customer-details-post{
+    margin-top: 4%;
+}
+/* customer-details-wrapper CSS:: END */
+
+
+.loader{
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

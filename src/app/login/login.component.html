@@ -1,0 +1,42 @@
+<div class="container-fluid login-wrapper">
+  <form>
+    <div class="form-group row">
+      <label for="username" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control"  name="username" id="username" placeholder="user name" [(ngModel)]="username" >
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="userpassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="userpassword" name="userpassword" [(ngModel)]="password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="login-btn col-sm-10">
+        <button (click)="userLogin()" type="submit" class="btn btn-primary mb-2" data-toggle="modal" >Login</button>
+      </div>
+    </div>
+  </form>
+
+  
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login Failed</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            User Name or Password is wrong.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
